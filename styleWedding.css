@@ -466,8 +466,8 @@ footer li {
     position: absolute;
     width: 1.5px;
     background-color: #aaa;
-    left: 17px;
-    margin-left: calc(40px + 5rem);
+    left: 15px;
+    margin-left: calc(45px + 5.5rem);
 }
 
 .timeline li::before,
