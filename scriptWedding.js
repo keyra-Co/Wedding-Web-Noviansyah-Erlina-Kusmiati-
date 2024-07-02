@@ -50,16 +50,16 @@ let isPlaying = 'false';
 const song = document.querySelector('#song');
 const enable = document.querySelector('.enable');
 
-function disableScroll() {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+// function disableScroll() {
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
-  window.onscroll = function () {
-    window.scrollTo(scrollTop, scrollLeft);
-  };
+//   window.onscroll = function () {
+//     window.scrollTo(scrollTop, scrollLeft);
+//   };
 
-  rootElement.style.scrollBehavior = 'auto';
-}
+//   rootElement.style.scrollBehavior = 'auto';
+// }
 
 enable.onclick = function () {
   window.onscroll = function () {};
@@ -94,11 +94,11 @@ audioIconWrapper.onclick = function () {
   isPlaying = !isPlaying;
 };
 
-if (!localStorage.getItem('opened')) {
-  disableScroll();
-}
+// if (!localStorage.getItem('opened')) {
+//   disableScroll();
+// }
 
-disableScroll();
+// disableScroll();
 
 // Params
 // const urlParams = new URLSearchParams(window.location.search);
