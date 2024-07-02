@@ -18,8 +18,8 @@
     --bigShadow: 1px 3px 5px rgba(0, 0, 0, .7);
 
     --headSize: calc(30px + 5rem);
-    --pSize: calc(10px + 1.2rem);
-    --pContent: calc(10px + .8rem);
+    --pSize: calc(12px + 1.1rem);
+    --pContent: calc(12px + .7rem);
     --bodySize: calc(15px + 1rem);
     --pHeadSize: calc(16px + 3rem);
 
