@@ -35,6 +35,18 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .hero {
     min-height: 100vh;
     text-shadow: var(--bigShadow);
@@ -58,6 +70,10 @@ body {
     background-position: center;
     background-size: cover;
     filter: blur(.8px) grayscale(.4);
+}
+
+.container-hero {
+    animation: fadeIn 1s forwards;
 }
 
 .hero h1 {
@@ -384,11 +400,13 @@ footer {
     background-color: var(--mainColor);
     color: white;
     padding: calc(10px + 2rem) calc(10px + 1.5rem);
+    font-size: var(--pSize);
+    text-align: center;
 }
 
 footer a {
     color: var(--bg);
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     transition: .5s ease;
 }
@@ -401,6 +419,18 @@ footer li {
     list-style: none;
     display: inline;
     margin: 10px 5px;
+}
+
+.credit {
+    border-top: 3px solid white;
+    font-size: var(--pContent) !important;
+    padding: calc(30px + 5rem) calc(5px + 1rem);
+    margin: var(--marginP)
+}
+
+.credit h5 {
+    font-size: var(--pHeadSize);
+    margin: var(--marginP);
 }
 
 .audio-icon-wrapper {
