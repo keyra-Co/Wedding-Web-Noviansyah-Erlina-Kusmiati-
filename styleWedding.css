@@ -268,11 +268,11 @@ body {
     z-index: -1;
     background-position: center;
     background-size: cover;
-    filter: opacity(.4) brightness(.3);
-    -webkit-filter: opacity(.4) brightness(.3);
-    -moz-filter: opacity(.4) brightness(.3);
-    -ms-filter: opacity(.4) brightness(.3);
-    -o-filter: opacity(.4) brightness(.3);
+    filter: opacity(.5) brightness(.1);
+    -webkit-filter: opacity(.5) brightness(.1);
+    -moz-filter: opacity(.5) brightness(.1);
+    -ms-filter: opacity(.5) brightness(.1);
+    -o-filter: opacity(.5) brightness(.1);
     mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -moz-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
