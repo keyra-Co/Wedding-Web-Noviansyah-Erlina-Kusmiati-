@@ -6,16 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Ms+Madi&family=Playwrite+IT+Moderna:wght@100..400&family=Sacramento&family=Yellowtail&display=swap');
 
 :root {
-    --mainColor: #8c00ff;
+    --mainColor: #7b00e0;
     --mainOpColor: rgba(140, 0, 255, .8);
     --secondColor: #9b2afe;
     --sideColor: rgba(250, 250, 2502, .8);
     --thirdColor: rgb(84, 2, 151);
     --bg: rgba(15, 6, 25, 0.95);
 
-    --smallShadow: 0 2px 2px rgba(100, 100, 100, .4);
-    --mediumShadow: 1px 2px 5px 3px rgba(100, 100, 100, .3);
-    --bigShadow: 1px 3px 5px rgba(100, 100, 100, .7);
+    --smallShadow: 0 2px 2px rgba(0, 10, 10, .4);
+    --mediumShadow: 1px 2px 5px 3px rgba(10, 10, 10, .3);
+    --bigShadow: 1px 3px 5px rgba(10, 10, 10, .7);
 
     --headSize: calc(30px + 5rem);
     --pSize: calc(12px + 1.1rem);
@@ -61,18 +61,26 @@ body {
     background-size: cover;
 }
 
-.hero::after {
+.hero::after,
+.home::after,
+.story::after,
+.gallery::after {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     z-index: -1;
-    background-image: url(Picture\ For\ Wedding/homeBg.png);
     background-position: center;
     background-size: cover;
+
+}
+
+.hero::after {
+    z-index: -1;
+    background-image: url(Picture\ For\ Wedding/homeBg.png);
     -webkit-filter: blur(.8px) grayscale(.4);
     -moz-filter: blur(.8px) grayscale(.4);
     -ms-filter: blur(.8px) grayscale(.4);
@@ -207,7 +215,7 @@ body {
     color: var(--mainColor);
     font-size: var(--headSize);
     font-weight: 700;
-    text-shadow: 1px 3px 5px rgba(164, 106, 212, 0.3);
+    text-shadow: 1px 1px 3px rgba(224, 224, 250, 0.3);
 }
 
 .story p,
@@ -258,27 +266,17 @@ body {
 }
 
 .home::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    filter: opacity(.5) brightness(.1);
-    -webkit-filter: opacity(.5) brightness(.1);
-    -moz-filter: opacity(.5) brightness(.1);
-    -ms-filter: opacity(.5) brightness(.1);
-    -o-filter: opacity(.5) brightness(.1);
+    filter: opacity(.6) brightness(.5);
+    -webkit-filter: opacity(.6) brightness(.5);
+    -moz-filter: opacity(.6) brightness(.5);
+    -ms-filter: opacity(.6) brightness(.5);
+    -o-filter: opacity(.6) brightness(.5);
     mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -moz-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -ms-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     -o-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
-    background-image: url(Picture\ For\ Wedding/bg1.jpg);
+    background-image: url(Picture\ For\ Wedding/bg3.jpg);
 }
 
 .home h3,
@@ -303,7 +301,7 @@ body {
     font-size: var(--pHeadSize);
     color: var(--mainColor);
     font-weight: 600;
-    text-shadow: var(--smallShadow);
+    text-shadow: 1px 2px 3px rgba(241, 241, 241, .5);
     margin-bottom: 0;
 }
 
@@ -377,6 +375,7 @@ body {
     font-size: var(--pContent);
 }
 
+
 .gallery,
 .story {
     position: relative;
@@ -384,22 +383,28 @@ body {
     color: white;
 }
 
+.story::after {
+    background-image: url('Picture\ For\ Wedding/homeBg.png');
+    filter: opacity(.15) grayscale(.3);
+    -webkit-filter: opacity(.15) grayscale(.3);
+    -moz-filter: opacity(.15) grayscale(.3);
+    -ms-filter: opacity(.15) grayscale(.3);
+    -o-filter: opacity(.15) grayscale(.3);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
+    -moz-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
+    -ms-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
+    -o-mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
+}
+
 .gallery .container {
     padding-top: calc(30px + 3rem);
 }
 
+
+
 .gallery::after {
-    content: '';
-    background-image: url('Picture\ For\ Wedding/bg3.jpg');
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
+    background-image: url('Picture\ For\ Wedding/bg1.jpg');
     filter: opacity(.15) grayscale(.3);
     -webkit-filter: opacity(.15) grayscale(.3);
     -moz-filter: opacity(.15) grayscale(.3);
