@@ -199,6 +199,7 @@ body {
     color: var(--mainColor);
     font-size: var(--headSize);
     font-weight: 700;
+    text-shadow: 1px 3px 5px rgba(164, 106, 212, 0.3);
 }
 
 .story p,
@@ -206,7 +207,7 @@ body {
 .rsvp p,
 .gifts p {
     font-size: var(--pSize);
-    font-weight: 450;
+    font-weight: 600;
 }
 
 .story p {
@@ -228,7 +229,7 @@ body {
 .gallery span,
 .gifts span {
     text-transform: uppercase;
-    color: #555;
+    color: white;
     letter-spacing: 1px;
     display: block;
     margin-bottom: calc(10px + .5rem);
@@ -259,21 +260,21 @@ body {
     z-index: -1;
     background-position: center;
     background-size: cover;
-    filter: opacity(.4) brightness(1.5);
+    filter: opacity(.4) brightness(.3);
     mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0));
     background-image: url(Picture\ For\ Wedding/bg1.jpg);
 }
 
 .home h3,
 .story h3 {
-    color: #112;
+    color: white;
     font-size: var(--pSize);
     margin: calc(8px + .5rem) 0 calc(10px + .8rem);
 }
 
 .home p {
     font-size: var(--pContent);
-    color: #223;
+    color: white;
 }
 
 .home .couple {
@@ -324,14 +325,10 @@ body {
     color: white;
 }
 
-.info h2 {
-    text-shadow: 1px 3px 5px rgba(164, 106, 212, 0.3);
-}
-
 .info a.btn,
 .info .alamat,
 .gallery p {
-    font-size: var(--pContent);
+    font-size: var(--pSize);
     margin: var(--marginP);
 }
 
@@ -364,8 +361,11 @@ body {
     font-size: var(--pContent);
 }
 
-.gallery {
+.gallery,
+.story {
     position: relative;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
 }
 
 .gallery .container {
@@ -557,8 +557,8 @@ footer li {
     position: absolute;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid white;
-    border-right: 0 solid white;
+    border-left: 14px solid rgba(0, 0, 0, .7);
+    border-right: 0 solid rgba(0, 0, 0, .7);
     border-bottom: 14px solid transparent;
     border-left-width: 0;
     border-right-width: 14px;
